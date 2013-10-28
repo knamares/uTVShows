@@ -1,4 +1,6 @@
-package com.kna.utvshows;
+package com.kna.utvshows.activity;
+
+import com.kna.utvshows.R;
 
 import android.os.Bundle;
 import android.app.Activity;

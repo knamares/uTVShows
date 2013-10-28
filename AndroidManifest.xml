@@ -13,9 +13,10 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.kna.utvshows.MainActivity"
-            android:label="@string/app_name" >
+        <activity android:name="com.kna.utvshows.activity.MainActivity" >
+        </activity>
+        <activity android:name="com.kna.utvshows.activity.LoginActivity" 
+            android:theme="@style/LoginTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
