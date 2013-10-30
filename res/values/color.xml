@@ -1,0 +1,7 @@
+<resources>
+	<color name="default_text_color">#fff</color>
+	<color name="default_text_shadow_color">#000</color>
+	<color name="default_button">#fff</color>
+	<color name="default_button_pressed">#67a9d2</color>
+	<color name="default_button_focus">#77b9e2</color>
+</resources>

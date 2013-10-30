@@ -4,5 +4,12 @@
     <string name="app_name">uTVShows</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="utvshows">uTVShows</string>
+    <string name="built_by_kna">Built by Kna</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+    <string name="example_example_com">example@example.com</string>
+    <string name="_">********</string>
 
 </resources>

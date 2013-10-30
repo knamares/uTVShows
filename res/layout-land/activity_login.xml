@@ -14,10 +14,12 @@
 
     <ImageView
         android:id="@+id/imageViewTitle"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/textViewLoginTitle"
+        android:layout_alignRight="@+id/textViewLoginTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/utvshows"
         android:src="@drawable/logo_login" />
 
@@ -26,11 +28,14 @@
         style="@style/LoginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/imageViewTitle"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
         android:padding="2dp"
         android:text="@string/utvshows"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textViewLoginSubtitle"
@@ -41,15 +46,18 @@
         android:layout_below="@+id/textViewLoginTitle"
         android:padding="2dp"
         android:text="@string/built_by_kna"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
 
     <TextView
         android:id="@+id/textViewLoginUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextLoginUsername"
-        android:layout_below="@+id/textViewLoginSubtitle"
-        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/imageViewTitle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/textViewLoginTitle"
         android:padding="2dp"
         android:text="@string/username"
         android:textAppearance="@style/defaultMediumText"
@@ -60,10 +68,9 @@
         style="@style/defaultEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLoginUsername"
         android:layout_below="@+id/textViewLoginUsername"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/inputs_default_margin"
-        android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:ems="10"
         android:hint="@string/example_example_com"
